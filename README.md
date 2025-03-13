@@ -24,3 +24,9 @@ method toCharArray to create a new character array containing a copy of characte
 
 method valueOf is static method that takes an argument of any type and convert it to a String object.
 By default, Java treats integer literals as type int and floating point literals as double.
+
+String objects are immutable, their character content cannot be changed after they're created because Class String does not provide methods that
+allow the contents of a String object to be modified.
+
+Class String Builder should be used if the character content would change.
+String Builder is not thread safe, use Class String Buffer which is thread safe
